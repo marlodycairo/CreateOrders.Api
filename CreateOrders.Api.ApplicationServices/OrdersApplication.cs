@@ -24,12 +24,12 @@ namespace CreateOrders.Api.ApplicationServices
 
         public OrdersViewResponse Create(OrdersViewModel order)
         {
-            ordersDomain.GetById(order.Id);
+            //ordersDomain.GetById(order.Id);
 
-            if (OrderExists(order.Id))
-            {
-                throw new Exception("El Pedido ya existe.");
-            }
+            //if (OrderExists(order.Id))
+            //{
+            //    throw new Exception("El Pedido ya existe.");
+            //}
 
             var result = mapper.Map<Orders>(order);
             var products = ordersDomain.Create(result);

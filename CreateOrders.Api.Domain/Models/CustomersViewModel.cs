@@ -6,7 +6,7 @@ namespace CreateOrders.Api.Domain.Models
 {
     public class CustomersViewModel
     {
-        public int Id { get; set; }
+        public int? Id { get; set; }
         public string FullName { get; set; }
         public int IDCustomer { get; set; }
         public string Adress { get; set; }

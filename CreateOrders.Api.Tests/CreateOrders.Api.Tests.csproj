@@ -21,6 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\CreateOrders.Api.ApplicationServices\CreateOrders.Api.ApplicationServices.csproj" />
     <ProjectReference Include="..\CreateOrders.Api.Application\CreateOrders.Api.Application.csproj" />
     <ProjectReference Include="..\CreateOrders.Api.DomainServices\CreateOrders.Api.DomainServices.csproj" />
   </ItemGroup>

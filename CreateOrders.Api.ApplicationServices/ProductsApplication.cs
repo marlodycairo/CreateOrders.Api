@@ -25,12 +25,12 @@ namespace CreateOrders.Api.ApplicationServices
 
         public ProductsViewResponse Create(ProductsViewModel product)
         {
-            productsDomain.GetById(product.Id);
+            //productsDomain.GetById(product.Id);
 
-            if (ProductExists(product.Id))
-            {
-                throw new ProductExistsException();
-            }
+            //if (ProductExists(product.Id))
+            //{
+            //    throw new ProductExistsException();
+            //}
 
             var result = mapper.Map<Products>(product);
             var products = productsDomain.Create(result);

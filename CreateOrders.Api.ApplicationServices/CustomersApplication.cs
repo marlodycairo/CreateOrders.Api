@@ -24,12 +24,12 @@ namespace CreateOrders.Api.ApplicationServices
 
         public CustomersViewResponse Create(CustomersViewModel customer)
         {
-            customersDomain.GetById(customer.Id);
+            //customersDomain.GetById(customer.Id);
 
-            if (CustomerExists(customer.Id))
-            {
-                throw new Exception("El Cliente ya existe.");
-            }
+            //if (CustomerExists(customer.Id))
+            //{
+            //    throw new Exception("El Cliente ya existe.");
+            //}
 
             var result = mapper.Map<Customers>(customer);
             var products = customersDomain.Create(result);
